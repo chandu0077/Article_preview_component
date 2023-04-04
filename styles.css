@@ -1,0 +1,135 @@
+body{
+    background-color: rgb(229, 236, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-family: Ubuntu, sans-serif;
+}
+.card{
+    width:580px;
+    height:190px;
+    background-color: white;
+    border-radius:10px;
+    display:flex;
+}
+img{
+     border-top-left-radius: 15px;
+     border-bottom-left-radius: 15px;
+}
+.main_content{
+    padding:18px;
+    padding-top:10px;
+    padding-bottom: 5px;
+}
+.card .main_content > p{
+    font: size 17px;
+    font-weight: 700;
+}
+.card .main_content section >p{
+    font-size:11px;
+    font-weight:200;
+    margin-bottom:10px;
+}
+.imag_content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about_content p{
+    margin:0;
+    margin-left:5px;
+}
+.about_content >p{
+    font-size: 15px; 
+    font-weight: bold;
+    margin-right:10px;
+}
+.prof_name{
+    display: flex;
+    width:190px;
+}
+.about_content{
+    display: flex;
+    flex-direction: column;
+}
+#profile{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+}
+.tooltip{
+    position:relative;
+    display:inline-block;
+    border-bottom:1px dotted block;
+}
+.share{
+    display: flex;
+    border-radius:50%;
+    background-color: rgb(133, 163, 174);;
+    width:19px;
+    height:19px;
+    justify-content: center;
+    align-items: center;
+}
+.share > i{
+    /* display: block; */
+    width:14px;
+    height: 14px;
+    /* align-items: center;
+    justify-content: center; */
+}
+.share{
+    position:relative;
+    display:inline-block;
+    border-bottom:1px dotted black;
+    align-items: center;
+}
+.share .social{
+    visibility: hidden;
+    width:190px;
+    height: 25px;
+    background-color: rgb(43, 59, 65);
+    color:#fff;
+    text-align:center;
+    border-radius:6px;
+    padding:3px 0 10px;
+    position:absolute;
+    z-index:1;
+    top:-50px;
+    right:-50px;
+    bottom:-20px;
+}
+.share:hover .social{
+    visibility: visible;
+}
+.social_content{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social_content p{
+    font-size:15px;
+}
+#share_text{
+    color:rgb(141, 198, 216);
+    font-size:10px;
+}
+
+@media screen and (max-width:320px){
+    .card{
+        display:flex;
+        flex-direction: column;
+        width:300px;
+        height:490px;
+        /* padding-left:10px; */
+    }
+    img{
+        width:300px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .imag_content{
+        padding:10px;   
+    }
+}
